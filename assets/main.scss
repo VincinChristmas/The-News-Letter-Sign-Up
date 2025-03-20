@@ -70,6 +70,29 @@
 	}
   }
 
+  body {
+    background-color: var(--CharcoalGrey);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  .container {
+    display: flex;
+    width: 50%;
+    background-color: white;
+  }
+
+  .container__form--left {
+    width: 50%;
+    
+  }
+
+  .container__form--right {
+    width: 50%;
+  }
+
   
 
 

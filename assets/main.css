@@ -1,0 +1,191 @@
+/***THE CSS RESET***/
+/* 1. Use a more-intuitive box-sizing model */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+9. Create a root stacking context
+ */
+#root, #__next {
+  isolation: isolate;
+}
+
+/***THE START OF THE MAIN CODE***/
+/***THE MAIN STYLES***/
+/***THE FONT IMPORT***/
+:root {
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+html p, html ul {
+  color: var(--DarkSlateGrey);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/***THE MEDIA QUERIES***/
+/******TABLET******/
+@media only screen and (max-width: 1023px) {
+  .mobile-logo {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .form-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--DarkSlateGrey);
+  }
+  .form-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .form-container ul div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .form-container ul p {
+    align-self: center;
+  }
+  .form-container ul img {
+    margin-right: 1rem;
+  }
+  .form-container .emailAddress {
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
+  }
+  .form-container .email, .form-container button {
+    width: 100%;
+  }
+  .form-container .email {
+    padding: 0.5rem;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .form-container button {
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+/******MOBILE******/
+@media only screen and (max-width: 768px) {
+  .mobile-logo {
+    max-width: 100%;
+    width: 100%;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .form-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--DarkSlateGrey);
+  }
+  .form-container ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .form-container ul div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .form-container ul p {
+    align-self: center;
+  }
+  .form-container ul img {
+    margin-right: 1rem;
+  }
+  .form-container .emailAddress {
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 0.4rem;
+  }
+  .form-container .email, .form-container button {
+    width: 100%;
+  }
+  .form-container .email {
+    padding: 0.5rem;
+    border: 1px solid var(--Grey);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  .form-container button {
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=main.css.map */

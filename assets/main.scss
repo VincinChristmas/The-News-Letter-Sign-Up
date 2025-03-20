@@ -1,0 +1,100 @@
+  /***THE CSS RESET***/
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+	margin: 0;
+  }
+  
+  body {
+	/* 3. Add accessible line-height */
+	line-height: 1.5;
+	/* 4. Improve text rendering */
+	-webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+	font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+	text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+	text-wrap: balance;
+  }
+  
+  /*
+	9. Create a root stacking context
+  */
+  #root, #__next {
+	isolation: isolate;
+  }
+
+  /***THE START OF THE MAIN CODE***/
+
+  /***THE MAIN STYLES***/
+
+  /***THE FONT IMPORT***/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  :root {
+	--DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+  }
+
+  html {
+	font-family: 'Roboto', sans-serif;
+	p, ul {
+		color: var(--DarkSlateGrey);
+		font-weight: 400;
+		font-size: 16px;
+	}
+  }
+
+  
+
+
+
+  
+
+
+
+
+  /***THE MEDIA QUERIES***/
+  @media only screen and (max-width: 1215px) {
+	
+  
+  }
+  
+  /******TABLET******/
+  @media only screen and (max-width: 1023px) {
+	
+  
+  }
+  
+  
+  
+  /******MOBILE******/
+  @media only screen and (max-width: 768px) {
+	
+	
+  }

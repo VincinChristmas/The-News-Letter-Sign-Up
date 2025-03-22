@@ -39,6 +39,12 @@
   h1, h2, h3, h4, h5, h6 {
 	text-wrap: balance;
   }
+
+  ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
   
   /*
 	9. Create a root stacking context
@@ -62,7 +68,7 @@
   }
 
   html {
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 	p, ul {
 		color: var(--DarkSlateGrey);
 		font-weight: 400;
@@ -80,17 +86,90 @@
 
   .container {
     display: flex;
-    width: 50%;
+    margin-top: 1.333rem;
+    width: 60%;
     background-color: white;
+    border-radius: 30px;
   }
 
-  .container__form--left {
-    width: 50%;
-    
-  }
 
   .container__form--right {
     width: 50%;
+  }
+
+  .container__form--left {
+    padding: 2rem;
+    font-weight: 400;
+    color: var(--CharcoalGrey);
+    width: 50%;
+    padding: 2rem;
+  }
+
+  .container__form--left--header {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--DarkSlateGrey);
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .container__form--left--list {
+    li {
+      display: flex;
+      margin-bottom: 1rem;
+
+      p {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .container__form--left--form {
+
+    p {
+      color: var(--CharcoalGrey);
+      font-weight: 700;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      input {
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+
+      button {
+        border-radius: 5px;
+        padding: 0.5rem;
+        background-color: var(--DarkSlateGrey);
+        font-weight: 700;
+        color: white;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+    }
+  }
+  .container__form--right {
+    padding: 1rem;
+    img {
+      width: 100%;
+    }
   }
 
   

@@ -14,6 +14,7 @@
 	line-height: 1.5;
 	/* 4. Improve text rendering */
 	-webkit-font-smoothing: antialiased;
+  height: 100%;
   }
   
   /* 5. Improve media defaults */
@@ -68,6 +69,7 @@
   }
 
   html {
+    height: 100%;
     font-family: 'Roboto', sans-serif;
 	p, ul {
 		color: var(--DarkSlateGrey);
@@ -80,13 +82,12 @@
     background-color: var(--CharcoalGrey);
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
   }
 
 
   .container {
     display: flex;
-    margin-top: 1.333rem;
     width: 60%;
     background-color: white;
     border-radius: 30px;
@@ -96,10 +97,6 @@
     display: none;
   }
 
-
-  .container__form--right {
-    width: 50%;
-  }
 
   .container__form--left {
     padding: 2rem;
@@ -115,7 +112,6 @@
       font-weight: 700;
       color: var(--DarkSlateGrey);
       margin-bottom: 1.5rem;
-      font-weight: 700;
     }
 
     p {
@@ -173,9 +169,58 @@
       }
     }
   }
+
   .container__form--right {
+    width: 50%;
     padding: 1rem;
     img {
+      width: 100%;
+    }
+  }
+
+  .success-container {
+    background: white;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 4rem 2rem;
+    border-radius: 30px;
+
+    img {
+      width: 17%;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--DarkSlateGrey);
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 0.93rem;
+      margin-bottom: 1.5rem;
+    }
+
+    span {
+      font-weight: 700;
+      color: var(--DarkSlateGrey);
+    }
+
+    button {
+      border-radius: 5px;
+      font-size: 0.8rem;
+      padding: 0.7rem;
+      background-color: var(--DarkSlateGrey);
+      font-weight: 700;
+      color: white;
+      border: none;
+      cursor: pointer;
       width: 100%;
     }
   }
@@ -305,7 +350,6 @@
         font-weight: 700;
         color: var(--DarkSlateGrey);
         margin-bottom: 1.5rem;
-        font-weight: 700;
       }
   
       p {

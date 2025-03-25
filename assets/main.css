@@ -164,7 +164,7 @@ body {
   width: 100%;
 }
 
-.success-container {
+.email-modal__container {
   background: white;
   width: 25rem;
   height: 25rem;
@@ -172,29 +172,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 3rem 3rem 4rem 3rem;
   border-radius: 30px;
+  display: none;
 }
-.success-container img {
+.email-modal__container img {
   width: 17%;
   margin-bottom: 1.5rem;
 }
-.success-container h1 {
+.email-modal__container h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--DarkSlateGrey);
   line-height: 1;
   margin-bottom: 1rem;
 }
-.success-container p {
-  font-size: 0.93rem;
+.email-modal__container p {
+  font-size: 0.8rem;
   margin-bottom: 1.5rem;
 }
-.success-container span {
+.email-modal__container span {
   font-weight: 700;
   color: var(--DarkSlateGrey);
 }
-.success-container button {
+.email-modal__container button {
   border-radius: 5px;
   font-size: 0.8rem;
   padding: 0.7rem;

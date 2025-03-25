@@ -178,7 +178,7 @@
     }
   }
 
-  .success-container {
+  .email-modal__container {
     background: white;
     width: 25rem;
     height: 25rem;
@@ -186,8 +186,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 3rem 3rem 4rem 3rem;
     border-radius: 30px;
+    display: none;
 
     img {
       width: 17%;
@@ -203,7 +204,7 @@
     }
 
     p {
-      font-size: 0.93rem;
+      font-size: 0.8rem;
       margin-bottom: 1.5rem;
     }
 

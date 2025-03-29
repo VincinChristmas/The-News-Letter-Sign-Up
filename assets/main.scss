@@ -226,6 +226,20 @@
     }
   }
 
+  .email-modal__form-group--error {
+    border: 2px solid red
+}
+
+.email-modal__error-message { 
+  color: blue;
+  margin-bottom: 0.7rem;
+  font-size: 0.8rem;
+  display: none;
+}
+
+.email-modal__error-message--active { 
+  display: block;
+}
 
   /***THE MEDIA QUERIES***/
 

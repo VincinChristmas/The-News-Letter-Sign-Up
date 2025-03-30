@@ -66,6 +66,7 @@
     --CharcoalGrey: hsl(235, 18%, 26%);
     --Grey: hsl(231, 7%, 60%);
     --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
   }
 
   html {
@@ -135,11 +136,26 @@
 
   .container__form--left--form {
 
+    
+
+    .container__form--left--form--paragraphs {
+      display: flex;
+      justify-content: space-between;
+    }
+
     p {
       color: var(--CharcoalGrey);
       font-weight: 700;
       margin-bottom: 0.5rem;
     }
+
+    .invalidEmail {
+      color: var(--Tomato);
+      display: none;
+    }
+
+
+
     form {
       display: flex;
       flex-direction: column;
@@ -157,6 +173,12 @@
         width: 100%;
       }
 
+      .email-modal__input:focus {
+        outline: none;
+        box-shadow: none;
+        border-color: hsl(4, 100%, 67%); 
+      }
+
       button {
         border-radius: 5px;
         padding: 0.9rem;
@@ -167,8 +189,14 @@
         cursor: pointer;
         width: 100%;
       }
+
+      button:hover {
+        background-color: var(--Tomato);
+      }
     }
   }
+
+  
 
   .container__form--right {
     width: 50%;
@@ -188,6 +216,7 @@
     align-items: center;
     padding: 3rem 3rem 4rem 3rem;
     border-radius: 30px;
+    transition: ease-in-out 1s;
     display: none;
 
     img {
@@ -224,11 +253,15 @@
       cursor: pointer;
       width: 100%;
     }
+
+    button:hover {
+      background-color: var(--Tomato);
+    }
   }
 
-  .email-thank--success {
-    transform: translate3d(0,0,0);
-}
+ 
+
+ 
 
 
 

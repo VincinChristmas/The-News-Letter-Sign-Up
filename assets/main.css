@@ -64,6 +64,7 @@ ul, li {
   --CharcoalGrey: hsl(235, 18%, 26%);
   --Grey: hsl(231, 7%, 60%);
   --White: hsl(0, 0%, 100%);
+  --Tomato: hsl(4, 100%, 67%);
 }
 
 html {
@@ -125,10 +126,18 @@ body {
   font-size: 0.889rem;
 }
 
+.container__form--left--form .container__form--left--form--paragraphs {
+  display: flex;
+  justify-content: space-between;
+}
 .container__form--left--form p {
   color: var(--CharcoalGrey);
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+.container__form--left--form .invalidEmail {
+  color: var(--Tomato);
+  display: none;
 }
 .container__form--left--form form {
   display: flex;
@@ -145,6 +154,11 @@ body {
   margin-bottom: 1.5rem;
   width: 100%;
 }
+.container__form--left--form form .email-modal__input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: hsl(4, 100%, 67%);
+}
 .container__form--left--form form button {
   border-radius: 5px;
   padding: 0.9rem;
@@ -154,6 +168,9 @@ body {
   border: none;
   cursor: pointer;
   width: 100%;
+}
+.container__form--left--form form button:hover {
+  background-color: var(--Tomato);
 }
 
 .container__form--right {
@@ -174,6 +191,7 @@ body {
   align-items: center;
   padding: 3rem 3rem 4rem 3rem;
   border-radius: 30px;
+  transition: ease-in-out 1s;
   display: none;
 }
 .email-modal img {
@@ -206,9 +224,8 @@ body {
   cursor: pointer;
   width: 100%;
 }
-
-.email-thank--success {
-  transform: translate3d(0, 0, 0);
+.email-modal button:hover {
+  background-color: var(--Tomato);
 }
 
 /***THE MEDIA QUERIES***/

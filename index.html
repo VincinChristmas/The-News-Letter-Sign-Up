@@ -13,7 +13,14 @@
   
   </head>
   <body>
-    
+    <div class="email-modal">
+      <div class="email-modal__container--content">
+        <img src="assets/images/icon-success.svg" alt="icon-check--img">
+        <h1>Thanks for subscribing!</h1>
+        <p>A confirmation email has been sent to <span>ash@lorecompany.com.</span> Please open it and click the button inside to confirm your subscription.</p>
+        <button type="submit" name="submit" id="submit">Dismiss message</button>
+      </div>
+  </div>
       
     
    <!-- Sign-up form start -->
@@ -43,17 +50,13 @@
           </ul>
         </div>
 
-        <div class="email-modal">
-          <div class="email-modal__container--content">
-            <img src="assets/images/icon-success.svg" alt="icon-check--img">
-            <h1>Thanks for subscribing!</h1>
-            <p>A confirmation email has been sent to <span>ash@lorecompany.com.</span> Please open it and click the button inside to confirm your subscription.</p>
-            <button type="submit" name="submit" id="submit">Dismiss message</button>
-          </div>
-      </div>
+       
   
     <div class="container__form--left--form">
+       <div class="container__form--left--form--paragraphs">
           <p>Email address</p>
+          <p class="invalidEmail">Valid email required</p>
+          </div>
         <form action="" method="">
           <div class="container__form--left--form--input">
               <input type="email" name="email" class="email-modal__input" placeholder="email@company.com" required>

@@ -1,17 +1,37 @@
-
-    let emailModal = document.getElementsByClassName("email-modal")[0];
+document.addEventListener('DOMContentLoaded', function() {
+    let form = document.querySelector('.container__form--left--form form');
     let emailInput = document.getElementsByClassName("email-modal__input")[0];
+    let emailButton = document.getElementsByClassName("email-modal__button")[0];
+    let emailModal = document.getElementsByClassName("email-modal")[0];
+    let leftContainer = document.getElementsByClassName("container__form--left")[0];
+    let rightContainer = document.getElementsByClassName("container__form--right")[0];
 
     function emailValid(email) {
         return /\S+@\S+\.\S+/.test(email);
       }
 
-      let addErrors = () => {
-        document
-          .getElementsByClassName("container__form--left--form--input")[0]
-          .classList.add("email-modal__form-group--error");
-        document
-          .getElementsByClassName("email-modal__error-message")[0]
-          .classList.add("email-modal__error-message--active");
-      };
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+      });
+
+
+      
+
+      emailButton.addEventListener("click", () => {
+        if (emailValid(emailInput.value)) {
+            emailModal.style.display = "block";
+            leftContainer.style.display = "none";
+            rightContainer.style.display = "none";
+
+            
+          } else {
+            console.log("Please provide a valid email address");
+          }
+      });
+
      
+
+    });
+
+
+

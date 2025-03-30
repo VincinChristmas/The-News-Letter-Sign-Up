@@ -178,7 +178,7 @@
     }
   }
 
-  .email-modal__container {
+  .email-modal {
     background: white;
     width: 25rem;
     height: 25rem;
@@ -226,20 +226,11 @@
     }
   }
 
-  .email-modal__form-group--error {
-    border: 2px solid red
+  .email-thank--success {
+    transform: translate3d(0,0,0);
 }
 
-.email-modal__error-message { 
-  color: blue;
-  margin-bottom: 0.7rem;
-  font-size: 0.8rem;
-  display: none;
-}
 
-.email-modal__error-message--active { 
-  display: block;
-}
 
   /***THE MEDIA QUERIES***/
 

@@ -164,7 +164,7 @@ body {
   width: 100%;
 }
 
-.email-modal__container {
+.email-modal {
   background: white;
   width: 25rem;
   height: 25rem;
@@ -176,26 +176,26 @@ body {
   border-radius: 30px;
   display: none;
 }
-.email-modal__container img {
+.email-modal img {
   width: 17%;
   margin-bottom: 1.5rem;
 }
-.email-modal__container h1 {
+.email-modal h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--DarkSlateGrey);
   line-height: 1;
   margin-bottom: 1rem;
 }
-.email-modal__container p {
+.email-modal p {
   font-size: 0.8rem;
   margin-bottom: 1.5rem;
 }
-.email-modal__container span {
+.email-modal span {
   font-weight: 700;
   color: var(--DarkSlateGrey);
 }
-.email-modal__container button {
+.email-modal button {
   border-radius: 5px;
   font-size: 0.8rem;
   padding: 0.7rem;
@@ -207,19 +207,8 @@ body {
   width: 100%;
 }
 
-.email-modal__form-group--error {
-  border: 2px solid red;
-}
-
-.email-modal__error-message {
-  color: blue;
-  margin-bottom: 0.7rem;
-  font-size: 0.8rem;
-  display: none;
-}
-
-.email-modal__error-message--active {
-  display: block;
+.email-thank--success {
+  transform: translate3d(0, 0, 0);
 }
 
 /***THE MEDIA QUERIES***/

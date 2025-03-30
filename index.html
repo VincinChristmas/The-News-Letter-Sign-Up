@@ -13,8 +13,13 @@
   
   </head>
   <body>
+    
+      
+    
    <!-- Sign-up form start -->
-    <div class="container">
+  <div class="container">
+    
+
       <img class="logoimg" src="assets/images/illustration-sign-up-mobile.svg" alt="logo--img">
       <div class="container__form--left">
         <div class="container__form--left--header">
@@ -37,37 +42,34 @@
             </li>
           </ul>
         </div>
+
+        <div class="email-modal">
+          <div class="email-modal__container--content">
+            <img src="assets/images/icon-success.svg" alt="icon-check--img">
+            <h1>Thanks for subscribing!</h1>
+            <p>A confirmation email has been sent to <span>ash@lorecompany.com.</span> Please open it and click the button inside to confirm your subscription.</p>
+            <button type="submit" name="submit" id="submit">Dismiss message</button>
+          </div>
+      </div>
   
     <div class="container__form--left--form">
           <p>Email address</p>
         <form action="" method="">
           <div class="container__form--left--form--input">
-              <input type="email" name="email" class= "email-modal__input" placeholder=" email@company.com" required>
-              <div class="email-modal__error-message">
-                Please enter a valid email address
-              </div>
-              <button type="submit" name="submit" id="submit">Subscribe to monthly newsletter</button>
-              <section class="email-modal">
-                <div class="email-modal__container">
-                    <div class="email-modal__container--content">
-                      <img src="assets/images/icon-success.svg" alt="icon-check--img">
-                      <h1>Thanks for subscribing!</h1>
-                      <p>A confirmation email has been sent to <span>ash@lorecompany.com.</span> Please open it and click the button inside to confirm your subscription.</p>
-                      <button type="submit" name="submit" id="submit">Dismiss message</button>
-                    </div>
-                </div>
-            </section>
-              
+              <input type="email" name="email" class="email-modal__input" placeholder="email@company.com" required>
+              <button type="submit" name="submit" id="submit" class="email-modal__button">Subscribe to monthly newsletter</button>
           </div>
         </form>
-        </div>
-    </div>
-
+      </div>
+   </div>
+   
 
       <div class="container__form--right">
         <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration--img">
-      </div> 
-    </div>
+      </div>    
+      
+</div>
+
     <script src="assets/js/app.js" ></script>   
   </body>
     </html>

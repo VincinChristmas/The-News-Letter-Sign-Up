@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let containerBlock = document.getElementsByClassName("container")[0];
     let emailNotValid = document.getElementsByClassName("invalidEmail")[0];
 
-    /*
+    
     let closeInput = () => {
         emailInput.classList.remove("email-modal__input");
       };
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let openInput = () => {
         emailInput.classList.add("email-modal__input");
       };
-      */
+      
     
 
     function emailValid(email) {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
           } else {
             emailNotValid.style.display = "block";
-           /* openInput(); */
+           openInput(); 
           }
       });
 

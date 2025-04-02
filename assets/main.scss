@@ -173,11 +173,19 @@
         width: 100%;
       }
 
+      
       .email-modal__input:focus {
         outline: none;
         box-shadow: none;
+        background: #ffe8e6;
         border-color: hsl(4, 100%, 67%); 
+        border-width: 2px;
+        &::placeholder {
+          color: hsl(4, 100%, 67%); 
+          opacity: 1;
+        }
       }
+        
 
       button {
         border-radius: 5px;

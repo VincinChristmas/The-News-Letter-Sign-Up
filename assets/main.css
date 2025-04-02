@@ -203,6 +203,7 @@ body {
   border-radius: 30px;
   transition: ease-in-out 1s;
   display: none;
+  animation: fadeIn 0.3s ease-out;
 }
 .email-modal img {
   width: 17%;
@@ -236,6 +237,16 @@ body {
 }
 .email-modal button:hover {
   background-color: var(--Tomato);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /***THE MEDIA QUERIES***/
@@ -466,5 +477,8 @@ body {
   }
   .container__form--right img {
     display: none;
+  }
+  .email-modal__close {
+    margin-top: 10rem;
   }
 }/*# sourceMappingURL=main.css.map */
